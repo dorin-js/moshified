@@ -4,6 +4,8 @@
   --color-accent: #ff3400;
   --color-headings: #1b0760;
   --color-body: #918ca4;
+  --color-border: #ccc;
+  --border-radius: 30px;
 }
 *,
 *::after,
@@ -203,6 +205,39 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .btn {
+    font-size: 1.5rem;
+  }
+}
+
+/* Inputs */
+.input {
+  width: 100%;
+  padding: 1.5rem 2.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  outline: none;
+  color: var(--color-headings);
+}
+::placeholder {
+  color: #cdcbd7;
+  font-size: 2rem;
+}
+.input-group {
+  width: 100%;
+  display: flex;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+}
+/* when we are in a group (nesting) - eliminate input border */
+.input-group .input {
+  border: 0;
+  flex-grow: 1;
+}
+.input-group .btn {
+  margin: 4px;
+}
+@media screen and (min-width: 1024px) {
+  .input {
     font-size: 1.5rem;
   }
 }
