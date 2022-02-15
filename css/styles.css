@@ -295,6 +295,9 @@ a {
   letter-spacing: 0.5px;
   margin-bottom: 2rem;
 }
+.plan_popular .card {
+  box-shadow: 0 20px 60px 0 rgb(9, 58, 88, 0.2);
+}
 .plan_popular .card__header {
   position: relative;
 }
@@ -379,5 +382,20 @@ a {
   }
   .quote__organization {
     font-size: 1.6rem;
+  }
+}
+
+/* Grids */
+.grid {
+  display: grid;
+}
+@media screen and (min-width: 768px) {
+  .grid_1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .grid_1x3 {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
