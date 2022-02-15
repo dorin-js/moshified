@@ -305,7 +305,7 @@ a {
   top: -6px;
   right: 5%;
 }
-@media screen and (min-width: 1024) {
+@media screen and (min-width: 1024px) {
   .plan__name {
     font-size: 1.4rem;
   }
@@ -335,4 +335,10 @@ a {
 }
 .media__description {
   font-size: 2rem;
+}
+@media screen and (min-width: 1024px) {
+  .media__title,
+  .media__description {
+    font-size: 1.8rem;
+  }
 }
