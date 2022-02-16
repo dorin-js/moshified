@@ -29,6 +29,7 @@ h2,
 h3 {
   color: var(--color-headings);
   margin-bottom: 1rem;
+  line-height: 1.1;
 }
 
 h1 {
@@ -209,6 +210,9 @@ a {
   width: 100%;
   display: inline-block;
 }
+.btn_stretched {
+  padding: 2rem 9rem;
+}
 .btn_outline {
   background: #fff;
   color: var(--color-headings);
@@ -221,6 +225,9 @@ a {
 @media screen and (min-width: 1024px) {
   .btn {
     font-size: 1.5rem;
+  }
+  .btn_stretched {
+    padding: 2rem 4rem;
   }
 }
 
@@ -582,5 +589,28 @@ a {
   }
   .nav__item {
     border: 0;
+  }
+}
+
+/* Hero banner */
+.hero {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+.hero__tagline {
+  font-size: 2rem;
+  color: #b9c3cf;
+  letter-spacing: 1px;
+  margin: 2rem 0 5rem;
+}
+.hero__image {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 0;
+  }
+  .hero__content {
+    text-align: left;
+    align-self: center;
   }
 }
