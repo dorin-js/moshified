@@ -6,7 +6,7 @@
   --color-body: #918ca4;
   --color-body-darker: #5c5577;
   --color-border: #ccc;
-  --border-radius: 30px;
+  --border-radius: 35px;
 }
 *,
 *::after,
@@ -184,6 +184,14 @@ a {
   white-space: nowrap;
   text-align: center;
   margin: 1rem 0;
+  vertical-align: middle;
+  outline: 0;
+}
+.btn .icon_24 {
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-right: 1rem;
+  vertical-align: middle;
 }
 .btn_primary {
   background: var(--color-primary);
@@ -204,7 +212,7 @@ a {
   color: #fff;
 }
 .btn_accent:hover {
-  background: #ff564a;
+  background: #ce1306;
 }
 .btn_block {
   width: 100%;
@@ -234,7 +242,7 @@ a {
 /* Inputs */
 .input {
   width: 100%;
-  padding: 1.5rem 2.5rem;
+  padding: 1.5rem 3.5rem;
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
   outline: none;
@@ -612,5 +620,32 @@ a {
   .hero__content {
     text-align: left;
     align-self: center;
+  }
+}
+
+/* Domain block */
+.block-domain .input-group {
+  box-shadow: 0 15px 60px 0 rgb(9, 58, 88, 0.15);
+  border: 0;
+  margin: 4rem auto;
+  max-width: 670px;
+}
+.block-domain__prices {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 6rem);
+  font-size: 2rem;
+  font-weight: 600;
+  justify-items: center;
+  max-width: 740px;
+}
+@media screen and (min-width: 768px) {
+  .block-domain__prices {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    font-size: 1.5rem;
+    margin: 0 auto;
+  }
+  .block-domain__prices .badge {
+    font-size: 1.5rem;
   }
 }
