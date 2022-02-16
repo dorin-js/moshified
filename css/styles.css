@@ -97,7 +97,7 @@ a {
   background: var(--color-primary);
 }
 .badge_secondary {
-  background: var(--color-secondary);
+  background: #126de4;
 }
 .badge_small {
   font-size: 1.6rem;
@@ -183,7 +183,8 @@ a {
   cursor: pointer;
   white-space: nowrap;
   text-align: center;
-  margin: 1rem 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   vertical-align: middle;
   outline: 0;
 }
@@ -215,8 +216,13 @@ a {
   background: #ce1306;
 }
 .btn_block {
-  width: 100%;
+  width: 90%;
   display: inline-block;
+}
+.btn_card {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 .btn_stretched {
   padding: 2rem 9rem;
@@ -334,6 +340,18 @@ a {
   top: -6px;
   right: 5%;
 }
+.plan .card:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-out;
+}
+@media screen and (max-width: 768px) {
+  .plan {
+    margin: 0 2rem;
+  }
+}
+/* .plan_popular:hover {
+  transform: scale(1.05);
+} */
 @media screen and (min-width: 1024px) {
   .plan__name {
     font-size: 1.4rem;
@@ -346,6 +364,9 @@ a {
   }
   .plan__description {
     font-size: 1.7rem;
+  }
+  .plan_popular {
+    transform: scaleY(1.1);
   }
 }
 
@@ -647,5 +668,19 @@ a {
   }
   .block-domain__prices .badge {
     font-size: 1.5rem;
+  }
+}
+
+/* Plans block */
+.plans {
+  margin: 4rem 0;
+}
+.plans .card {
+  max-width: 500px;
+  margin: 3rem auto;
+}
+@media screen and (min-width: 1024px) {
+  .plans .plan {
+    margin: 3rem 2rem 1.5rem;
   }
 }
