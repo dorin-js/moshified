@@ -539,7 +539,7 @@ a {
 
 /* Blocks */
 .block {
-  --padding-vertical: 6rem;
+  --padding-vertical: 4rem;
   padding: var(--padding-vertical) 2rem;
 }
 .block__header {
@@ -682,5 +682,31 @@ a {
 @media screen and (min-width: 1024px) {
   .plans .plan {
     margin: 3rem 2rem 1.5rem;
+  }
+}
+
+/* Features */
+.feature__heading {
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+.feature {
+  gap: 4rem 1rem;
+}
+.feature:first-of-type {
+  margin-top: 5rem;
+}
+.feature__image {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .feature__heading {
+    font-size: 2.4rem;
+  }
+  .feature__text {
+    font-size: 1.8rem;
+  }
+  .feature__content_order {
+    order: 2;
   }
 }
