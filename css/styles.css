@@ -14,6 +14,13 @@
   box-sizing: border-box;
 }
 /* Typography */
+::selection {
+  background: #00c787;
+  color: #fff;
+}
+h3::selection {
+  color: #222;
+}
 html {
   font-size: 62.5%;
 }
@@ -40,6 +47,7 @@ h2 {
 }
 h3 {
   font-size: 2.4rem;
+  font-weight: 500;
 }
 p {
   margin-top: 0;
@@ -116,7 +124,6 @@ a {
 .list {
   list-style: none;
   padding-left: 0;
-  color: var(--color-headings);
 }
 .list_inline-bold .list__item {
   display: inline-block;
@@ -127,6 +134,7 @@ a {
 .list_tick {
   list-style-image: url(../images/icon/tick.svg);
   padding-left: 3rem;
+  color: var(--color-headings);
 }
 .list_tick .list__item {
   padding-left: 0.8rem;
@@ -373,6 +381,7 @@ a {
 /* Media */
 .media {
   display: flex;
+  margin-bottom: 3rem;
 }
 .media__title {
   margin-top: 0;
@@ -544,6 +553,7 @@ a {
 }
 .block__header {
   text-align: center;
+  margin-bottom: 4rem;
 }
 .block__heading {
   margin-top: 0;
@@ -552,15 +562,17 @@ a {
   background: #000;
   color: #7b858b;
 }
-.block_dark .block__heading {
+.block_dark h1,
+.block_dark h2,
+.block_dark h3 {
   color: #fff;
 }
 .block_skewed-right {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
   padding-bottom: calc(var(--padding-vertical) + 4rem);
 }
 .block_skewed-left {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
   padding-bottom: calc(var(--padding-vertical) + 4rem);
 }
 .container {
@@ -622,9 +634,6 @@ a {
 }
 
 /* Hero banner */
-.hero {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
-}
 .hero__tagline {
   font-size: 2rem;
   color: #b9c3cf;
@@ -708,5 +717,24 @@ a {
   }
   .feature__content_order {
     order: 2;
+  }
+}
+
+/* Showcase block */
+.block-showcase__image > img {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .block-showcase .grid {
+    grid-template-columns: 50% 50%;
+  }
+  .block-showcase__image {
+    width: auto;
+    max-width: 700px;
+    justify-self: end;
+  }
+  .block-showcase__image > img {
+    width: auto;
+    max-width: 700px;
   }
 }
