@@ -14,55 +14,83 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <section class="block">
-      <header class="block__header">
-        <h2>What our Customers are Saying</h2>
-        <p>
-          Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-          maecenas accumsan.
-        </p>
-      </header>
-      <div class="container">
-        <div class="card testimonial">
-          <div class="grid grid_1x2">
-            <div class="testimonial__image">
-              <img
-                src="images/testimonial.jpg"
-                alt="A happy, smiling customer"
-              />
-              <span class="icon-container icon-container-accent">
-                <svg class="icon icon_white icon_small">
-                  <use xlink:href="images/icon/sprite.svg#quotes"></use>
-                </svg>
-              </span>
-            </div>
-            <blockquote class="quote">
-              <p class="quote__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-                ipsum suspendisse ultrices gravida. Risus commodo viverra
-                maecenas accumsan lacus vel facilisis.
-              </p>
-              <footer>
-                <div class="media">
-                  <div class="media__image">
-                    <svg class="icon icon_primary quote__line">
-                      <use xlink:href="images/icon/sprite.svg#line"></use>
-                    </svg>
-                  </div>
-                  <div class="media__body">
-                    <h3 class="media__title quote__author">Jhone Lumeo</h3>
-                    <p class="media__description quote__organization">
-                      Mosh Company ceo.
-                    </p>
-                  </div>
-                </div>
-              </footer>
-            </blockquote>
+    <footer class="block block_dark footer">
+      <div class="container grid footer__sections">
+        <section class="collapsible collapsible_expanded footer__section">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading">Products</h2>
+            <svg class="icon icon_white collapsible_chevron">
+              <use xlink:href="images/icon/sprite.svg#chevron"></use>
+            </svg>
+          </header>
+          <div class="collapsible__content">
+            <ul class="list">
+              <a href="#"><li>WordPress Hosting</li></a>
+              <a href="#"><li>Free Automated WordPress</li></a>
+              <a href="#"><li>Migrations</li></a>
+              <a href="#"><li>Domain Names</li></a>
+              <a href="#"><li>Monthly Web Hosting</li></a>
+            </ul>
           </div>
-        </div>
+        </section>
+        <section class="collapsible footer__section">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading">Company</h2>
+            <svg class="icon icon_white collapsible_chevron">
+              <use xlink:href="images/icon/sprite.svg#chevron"></use>
+            </svg>
+          </header>
+          <div class="collapsible__content">
+            <ul class="list">
+              <a href="#"><li>About</li></a>
+              <a href="#"><li>Affiliates</li></a>
+              <a href="#"><li>Blog</li></a>
+              <a href="#"><li>Careers</li></a>
+              <a href="#"><li>News</li></a>
+              <a href="#"><li>Green Hosting</li></a>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section footer__section">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading">Support</h2>
+            <svg class="icon icon_white collapsible_chevron">
+              <use xlink:href="images/icon/sprite.svg#chevron"></use>
+            </svg>
+          </header>
+          <div class="collapsible__content">
+            <ul class="list">
+              <a href="#"><li>Contact</li></a>
+              <a href="#"><li>Knowledge Base</li></a>
+              <a href="#"><li>Forums</li></a>
+              <a href="#"><li>System Status</li></a>
+              <a href="#"><li>Web Hosting</li></a>
+              <a href="#"><li>DreamCompute</li></a>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading">Domains</h2>
+            <svg class="icon icon_white collapsible_chevron">
+              <use xlink:href="images/icon/sprite.svg#chevron"></use>
+            </svg>
+          </header>
+          <div class="collapsible__content">
+            <ul class="list">
+              <a href="#"><li>Domain Checker</li></a>
+              <a href="#"><li>Domain Transfer</li></a>
+              <a href="#"><li>Free Domain</li></a>
+              <a href="#"><li>Cheap SSL Certificate</li></a>
+            </ul>
+          </div>
+        </section>
+        <section class="footer__brand">
+          <img class="footer__logo" src="images/logo.svg" alt="" />
+          <p class="footer__copyright">Copyright © 2022 Dorin Ilușca</p>
+        </section>
       </div>
-    </section>
+    </footer>
     <script src="js/main.js"></script>
   </body>
 </html>
