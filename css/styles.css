@@ -548,8 +548,8 @@ a {
 
 /* Blocks */
 .block {
-  --padding-vertical: 4rem;
-  padding: var(--padding-vertical) 2rem;
+  --padding-vertical: 3rem;
+  padding: var(--padding-vertical) 2rem 7rem;
 }
 .block__header {
   text-align: center;
@@ -669,21 +669,37 @@ a {
   justify-items: center;
   max-width: 740px;
 }
+.block-domain__prices > li:hover {
+  cursor: pointer;
+  color: var(--color-primary);
+}
+@media screen and (max-width: 460px) {
+  .block-domain__prices {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .btn_accent-hidden-text {
+    display: none;
+  }
+  .btn .icon_24 {
+    margin-right: 0;
+  }
+}
 @media screen and (min-width: 768px) {
   .block-domain__prices {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-template-rows: 0;
     font-size: 1.5rem;
     margin: 0 auto;
   }
   .block-domain__prices .badge {
     font-size: 1.5rem;
   }
+  .block-domain__prices li {
+    height: 20px;
+  }
 }
 
 /* Plans block */
-.plans {
-  margin: 4rem 0;
-}
 .plans .card {
   max-width: 500px;
   margin: 3rem auto;
@@ -703,7 +719,10 @@ a {
   gap: 4rem 1rem;
 }
 .feature:first-of-type {
-  margin-top: 5rem;
+  margin-top: 2rem;
+}
+.block.feature_block {
+  padding-bottom: 1rem;
 }
 .feature__image {
   width: 100%;
