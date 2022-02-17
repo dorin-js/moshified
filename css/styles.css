@@ -669,6 +669,9 @@ a {
   justify-items: center;
   max-width: 740px;
 }
+.block-domain__prices > li {
+  color: var(--color-headings);
+}
 .block-domain__prices > li:hover {
   cursor: pointer;
   color: var(--color-primary);
@@ -762,7 +765,7 @@ a {
 .footer {
   background: #232323;
 }
-.footer .list li {
+.footer .list a {
   color: #fff;
   opacity: 0.7;
 }
