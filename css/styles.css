@@ -744,7 +744,7 @@ a {
 }
 
 /* Showcase block */
-.block-showcase__image > img {
+.block-showcase__image {
   width: 100%;
 }
 @media screen and (min-width: 768px) {
@@ -752,13 +752,9 @@ a {
     grid-template-columns: 50% 50%;
   }
   .block-showcase__image {
-    width: 100%;
+    width: auto;
     max-width: 700px;
     justify-self: end;
-  }
-  .block-showcase__image > img {
-    width: 100%;
-    max-width: 700px;
   }
 }
 
