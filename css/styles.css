@@ -484,6 +484,7 @@ a {
 .callout_secondary {
   background: var(--color-secondary);
   color: white;
+  transform: translateY(6rem);
 }
 .callout__heading {
   margin-top: 0;
@@ -771,6 +772,9 @@ a {
 }
 .footer .list li:hover {
   opacity: 1;
+}
+.footer_get-started {
+  padding-top: 8rem;
 }
 .footer__section {
   padding: 2rem;
