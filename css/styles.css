@@ -747,7 +747,7 @@ a {
 .block-showcase__image {
   width: 100%;
 }
-.block-showcase__image img {
+.block-showcase__image > img {
   width: 100%;
 }
 @media screen and (min-width: 768px) {
